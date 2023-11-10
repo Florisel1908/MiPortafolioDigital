@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MiPortafolioDigital</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fernanda</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#aboutme" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="IMG/SF.png" alt="">
+            </div>
+            <h1>Fernanda Florisel Vargas Alvarado </h1>
+            <h2>Ingeniera en Desarrollo y Gestión de Software</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="aboutme" class="aboutme">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Fernanda Florisel vargas Alvardo es, </span>una persona dedicada y 
+                responsable, comprometida con la búsqueda constante de nuevos desafíos. 
+                Mi habilidad para la resolución de problemas y la organización del tiempo me 
+                permite abordar tareas de manera eficiente y efectiva. Además, mi enfoque 
+                práctico me ayuda a llevar a cabo proyectos de manera exitosa. Siempre estoy 
+                dispuesta a descubrir nuevos horizontes y aprender, lo que me impulsa a 
+                crecer personal y profesionalmente. En mis tiempos libre, disfruto de una 
+                variedad de actividades que me permiten expresarme y relajarme. Bailar danza 
+                folclórica me conecta con mi cultura y me llena de energía. La natación y el 
+                crossfit son mis opciones para mantenerme en forma y desafiar mis límites. 
+                También valoro mucho el tiempo con mis amigos, ya sea saliendo juntos o viendo 
+                series y películas. La música es una constante en mi vida, y siempre estoy en 
+                busca de nuevos sonidos. Por último, pasar tiempo con mi familia es una 
+                prioridad, ya que me brinda amor y apoyo incondicional.</p>
+
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Fecha de Nacimiento</strong>
+                                19-04-2000
+                            </li>
+                            <li>
+                                <strong>Célular</strong>
+                                449 526 2927
+                            </li>
+                            <li>
+                                <strong>Teléfono Fijo</strong>
+                                458 987 1090
+                            </li>
+                            <li>
+                                <strong>Correo Electronico Personal</strong>
+                                ferflorvaral@gmail.com
+                            </li>
+                            <li>
+                                <strong>Correo Electronico Institusional</strong>
+                                2036001806@utna.edu.mx
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                5 de Mayo #220, Col. Santa Cruz, Cosio, Ags.
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>Estidiante</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- interes -->
+                    <div class="col">
+                        <h3>Datos de Interés</h3>
+                        <div class="contenedor-interes">
+                            <div class="interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>Viajar</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>Musica</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>Deportes</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-bowl-food"></i>
+                                <span>Comer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button>
+                    <a download="CV" href="CV/curriculo.pdf">Descargar CV</a> <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="file">
+                <!-- Technicl SKILLS -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>62%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Danza Folclorica</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional  -->
+                <div class="col">
+                    <h3>Aptitudes Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Confidencialidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>68%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>84%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>38%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Peparatoria Area Humanidades</h4>
+                        <span class="casa">CBTA #103 "Saturnino Herran</span>
+                        <span class="fecha">2015 - 2018</span>
+                        <p>Realicé mis estudios de preparatoria en el municipio de Cosío, enfocándome 
+                            inicialmente en la especialidad de Informática. Sin embargo, durante el 
+                            último semestre, decidí cambiar mi enfoque y me incliné hacia el área de 
+                            Humanidades. Esta transición refleja mi interés en explorar diferentes campos 
+                            de conocimiento y mi disposición para adaptarme a nuevas perspectivas y 
+                            oportunidades educativas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Carrera de Sobrecargo de Aviación</h4>
+                        <span class="casa">Centro de Estudios Aeronáutico "Alas Doradas"</span>
+                        <span class="fecha">2018 - 2019</span>
+                        <p>Después de concluir la preparatoria, opté por seguir mi pasión por la 
+                            aviación y decidí ingresar al centro de estudios aeronáuticos con el 
+                            objetivo de convertirme en auxiliar de vuelo. Esta elección representa 
+                            mi entusiasmo por trabajar en la industria aeronáutica y servir en un 
+                            papel fundamental en la seguridad y el confort de los pasajeros aéreos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria en desarrollo y Gestión de Software </h4>
+                        <span class="casa">Universidad Tecnológica del Norte de Aguascalientes</span>
+                        <span class="fecha">2020 - 2024</span>
+                        <p>Tras considerar diferentes opciones, decidí explorar una segunda carrera y 
+                            actualmente me encuentro en el décimo cuatrimestre de Ingeniería en Desarrollo 
+                            y Gestión de Software. Esta elección refleja mi versatilidad y el deseo de adquirir 
+                            habilidades en un campo en constante evolución, lo que me brinda la oportunidad 
+                            de diversificar mis conocimientos y perspectivas educativas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Asistente de Veterinaria</h4>
+                        <span class="casa">Veterinaria "La Herradura"</span>
+                        <span class="fecha">2023</span>
+                        <p>Encargada de venta en forraje, medicamento y documentación de traslado de animales 
+                            de granja.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asistente de Ventas</h4>
+                        <span class="casa">Tienda de Regalos "Kelindo"</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Encargada de ventas de productos de belleza, material para aplicación de uñas y regalos 
+                            para cualquier genero y edades. Responsable de reportes de cuentas y supervisión.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asistente en Ventas</h4>
+                        <span class="casa"> Cyber "Max"</span>
+                        <span class="fecha">2020 - 2020</span>
+                        <p>Atención al cliente en servicio  de copias, impresiones, escáner y mas referente a la computación</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="IMG/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sobrecargo de Aviación</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMG/p3.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Regional UTNA</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMG/p5.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Presentación de Bienvenida</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMG/p4.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Modelo de los 20's</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMG/p10.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Reunión Familiar</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMG/p11.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Estudios Universales</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMG/p2.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Dia del Ingeniero</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMG/p6.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Concurso de Natación</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMG/p9.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sesión de Fotos</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="file">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero Telefonico">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="IMG/ubicacion.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                5 de Mayo #220, Col. Sta. Cruz, Cosio, Ags.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 449 526 29 27
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ferflorvaral@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    
+<script src="JS/index.js"></script>
+    
+</body>
+</html>
