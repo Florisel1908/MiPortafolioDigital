@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="manifest" href="manifest.json">
     <title>MiPortafolioDigital</title>
     <link rel="stylesheet" href="CSS/index.css">
 </head>
@@ -34,12 +35,12 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="IMG/SF.png" alt="">
+                <img src="IMG_pd/SF.png" alt="">
             </div>
             <h1>Fernanda Florisel Vargas Alvarado </h1>
             <h2>Ingeniera en Desarrollo y Gestión de Software</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/fernanda.alvarado.71619"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
@@ -344,63 +345,63 @@
             <h2>PORTAFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="IMG/p1.jpg" alt="">
+                    <img src="IMG_pd/p1.jpg" alt="">
                     <div class="overlay">
                         <h3>Sobrecargo de Aviación</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="IMG/p3.jpeg" alt="">
+                    <img src="IMG_pd/p3.jpeg" alt="">
                     <div class="overlay">
                         <h3>Regional UTNA</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="IMG/p5.jpeg" alt="">
+                    <img src="IMG_pd/p5.jpeg" alt="">
                     <div class="overlay">
                         <h3>Presentación de Bienvenida</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="IMG/p4.jpeg" alt="">
+                    <img src="IMG_pd/p4.jpeg" alt="">
                     <div class="overlay">
                         <h3>Modelo de los 20's</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="IMG/p10.jpg" alt="">
+                    <img src="IMG_pd/p10.jpg" alt="">
                     <div class="overlay">
                         <h3>Reunión Familiar</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="IMG/p11.jpeg" alt="">
+                    <img src="IMG_pd/p11.jpeg" alt="">
                     <div class="overlay">
                         <h3>Estudios Universales</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="IMG/p2.jpeg" alt="">
+                    <img src="IMG_pd/p2.jpeg" alt="">
                     <div class="overlay">
                         <h3>Dia del Ingeniero</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="IMG/p6.jpeg" alt="">
+                    <img src="IMG_pd/p6.jpeg" alt="">
                     <div class="overlay">
                         <h3>Concurso de Natación</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="IMG/p9.jpg" alt="">
+                    <img src="IMG_pd/p9.jpg" alt="">
                     <div class="overlay">
                         <h3>Sesión de Fotos</h3>
                         <p>Fotografia</p>
@@ -417,19 +418,19 @@
             <div class="file">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tu Nombre">
-                    <input type="text" placeholder="Numero Telefonico">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Asunto">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
+                    <input id="name" type="text" placeholder="Tu Nombre">
+                    <input id="cellphone" type="text" placeholder="Numero Telefonico">
+                    <input id="email" type="text" placeholder="Correo Electronico" id="mail">
+                    <input id="asunto" type="text" placeholder="Asunto">
+                    <textarea name="" id="messaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button onclick="enviarMail()">
                         Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
-                    <img src="IMG/ubicacion.jpg" alt="">
+                    <img src="IMG_pd/ubicacion.jpg" alt="">
                     <div class="info">
                         <ul>
                             <li>
@@ -465,6 +466,7 @@
 
     
 <script src="JS/index.js"></script>
+<script src="JS/app.js"></script>
     
 </body>
 </html>
