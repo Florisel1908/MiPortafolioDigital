@@ -43,3 +43,42 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 }
+
+// funcionalidad del contacto
+function enviarMail(){
+    const name = document.getElementById('name').value
+    const cellphone = document.getElementById('cellphone').value
+    const email = document.getElementById('email').value
+    const asunto = document.getElementById('asunto').value
+    const messaje = document.getElementById('messaje').value
+    console.log(name,cellphone,email,asunto,messaje)
+
+    fetch('http://10.20.55.102:3000/api/sendmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            from: email,
+            to: 'ferflorvaral@gmail.com',
+            subject: asunto,
+            text: messaje,
+            name: name,
+            phone: cellphone
+        
+          }),
+      })
+      .then(function(response){ 
+        return response.json()})
+        .then(function(data)
+        {console.log(data)
+      }).catch(error => console.error('Error:', error)); 
+}
+/*
+fetch('http://10.20.55.102:3000/api/hola')
+      .then(function(response){ 
+        return response.json()})
+        .then(function(data)
+        {console.log(data)
+      }).catch(error => console.error('Error:', error)); 
+*/
