@@ -21,8 +21,7 @@ const archivosChache=[
     "/IMG_pd/p10.jpg",
     "/IMG_pd/p11.jpeg",
     "/IMG_pd/prueba.jpg",
-    "/IMG_pd/ubicacion.jpg",
-    "/Fonts/Righteous/Righteous-Regular.ttf"
+    "/IMG_pd/ubicacion.jpg"
 ]
 
 //instalacion con una promesa "self"
